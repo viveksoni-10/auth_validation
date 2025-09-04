@@ -8,10 +8,10 @@ import { AdminContacts } from "./pages/AdminContacts";
 import { AdminUpdateUser } from "./pages/AdminUpdateUser";
 import { AdminUsers } from "./pages/AdminUsers";
 import Home from "./pages/home";
-import Logout from "./pages/Logout";
-import { NotFound } from "./pages/pageNOtFound";
+import { PageNotFound } from "./pages/PageNotFound";
 import Service from "./pages/service";
 import { Contact } from "./pages/Contact";
+import Logout from "./pages/Logout";
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
           <Route path="/service" element={<Service />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/logout" element={<Logout/>} />
+          <Route path="/logout" element={<Logout />} />
         </Route>
 
         {/* Admin routes inside AdminLayout */}
@@ -37,7 +37,7 @@ function App() {
         </Route>
 
         {/* Not found */}
-        <Route path="*" element={<NotFound />} />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
     </BrowserRouter>
   );
