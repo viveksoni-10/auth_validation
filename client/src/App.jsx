@@ -11,7 +11,7 @@ import Home from "./pages/home";
 import { PageNotFound } from "./pages/PageNotFound";
 import Service from "./pages/service";
 import { Contact } from "./pages/Contact";
-import Logout from "./pages/Logout";
+import Logout from "./pages/Logout.jsx";
 
 function App() {
   return (
