@@ -1,0 +1,132 @@
+/* ✅ Responsive Utilities */
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden; /* mobile pe horizontal scroll band */
+}
+
+/* ✅ Container */
+.main-container,
+.admin-container,
+.updateuser-container,
+.admin-contacts-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* ✅ Navbar Responsive */
+.main-header {
+  background: #111827;
+  color: white;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.main-logo-link {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+.main-nav {
+  margin-top: 1rem;
+}
+
+.main-menu {
+  display: flex;
+  flex-wrap: wrap; /* ✅ overflow hone pe wrap */
+  gap: 1rem;
+  justify-content: center;
+}
+
+.main-menu li {
+  list-style: none;
+}
+
+.main-menu a {
+  color: white;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.main-menu a:hover,
+.main-menu .nav-active {
+  background: #2563eb;
+}
+
+/* ✅ Table Responsive */
+.table-wrapper,
+.admin-contacts-table-wrapper {
+  overflow-x: auto;
+}
+
+/* ✅ Grid Responsive */
+.about-grid,
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* ✅ Forms Responsive */
+.updateuser-form {
+  max-width: 500px;
+  margin: auto;
+  padding: 1rem;
+}
+
+/* ✅ Media Queries */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title,
+  .updateuser-title,
+  .admin-contacts-title {
+    font-size: 1.3rem;
+  }
+
+  .btn,
+  .updateuser-btn,
+  .contact-delete-btn {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-logo-link {
+    font-size: 1.2rem;
+  }
+
+  .main-menu a {
+    font-size: 14px;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .updateuser-input {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,560 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Hero Section */
+.home {
+  padding: 3rem 2rem;
+  text-align: center;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #f8fafc;
+  min-height: 100vh;
+}
+
+.home-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #38bdf8;
+  margin-bottom: 1rem;
+}
+
+.home-hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #cbd5e1;
+}
+
+.home-btn {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background: #38bdf8;
+  border: none;
+  border-radius: 8px;
+  color: #0f172a;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.home-btn:hover {
+  background: #0ea5e9;
+  transform: scale(1.05);
+}
+
+/* Features Section */
+.home-features {
+  margin-top: 4rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.feature-card {
+  background: #1e293b;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+}
+
+.feature-card h2 {
+  color: #38bdf8;
+  margin-bottom: 0.5rem;
+}
+
+.about {
+  padding: 4rem 2rem;
+  background: #f8fafc; /* light background, different from Home */
+  color: #1e293b;
+  min-height: 100vh;
+}
+
+.about-top {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.about-top h1 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #2563eb; /* blue shade instead of cyan */
+  margin-bottom: 1rem;
+}
+
+.about-top p {
+  font-size: 1.1rem;
+  color: #475569;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.about-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin-bottom: 3rem;
+}
+
+.about-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  border-left: 6px solid #2563eb; /* stylish left border */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.about-box:hover {
+  transform: translateY(-6px);
+}
+
+.about-box h2 {
+  color: #2563eb;
+  margin-bottom: 1rem;
+}
+
+.about-footer {
+  text-align: center;
+  font-weight: 500;
+  color: #334155;
+  font-style: italic;
+}
+
+
+
+.section-services {
+  padding: 60px 20px;
+  background: #f8f9fa;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+/* Grid Layout */
+.container.grid-three-cols {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 25px;
+  justify-content: center;
+}
+
+/* Card Styling */
+.card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.card-img img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Card Details */
+.card-details {
+  padding: 20px;
+}
+
+.grid.grid-two-cols {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #555;
+}
+
+.service-title {
+  font-size: 1.4rem;
+  margin: 10px 0;
+  color: #222;
+}
+
+.service-desc {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Provider & Price highlight */
+.provider {
+  color: #007bff;
+}
+
+.price {
+  color: #28a745;
+  font-weight: bold;
+}
+
+
+.notfound-container {
+  text-align: center;
+  margin-top: 100px;
+  font-family: Arial, sans-serif;
+}
+
+.notfound-container h1 {
+  font-size: 5rem;
+  color: #ff4d4d;
+}
+
+.notfound-container h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.notfound-container p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.home-link {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  margin: 15px;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.home-link:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+/* Container */
+.admin-container {
+  background: #111;
+  color: white;
+  min-height: 100vh;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+}
+
+/* Title */
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #4cafef;
+}
+
+/* Table wrapper */
+.table-wrapper {
+  background: white;
+  color: #333;
+  border-radius: 12px;
+  overflow-x: auto;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Table */
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.user-table th,
+.user-table td {
+  padding: 14px 18px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.user-table th {
+  background: #4cafef;
+  color: white;
+  font-size: 16px;
+}
+
+.user-table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.user-table tr:hover {
+  background: #e8f6ff;
+  transition: 0.3s;
+}
+
+/* No data row */
+.no-data {
+  text-align: center;
+  padding: 20px;
+  color: gray;
+  font-style: italic;
+}
+
+/* Buttons */
+.btn {
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-edit {
+  background: #4caf50;
+  color: white;
+}
+
+.btn-edit:hover {
+  background: #43a047;
+}
+
+.btn-delete {
+  background: #f44336;
+  color: white;
+}
+
+.btn-delete:hover {
+  background: #d32f2f;
+}
+
+
+/* Common container */
+.admin-container,
+.updateuser-container,
+.admin-contacts-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin: 20px;
+}
+
+/* Title */
+.title,
+.updateuser-title,
+.admin-contacts-title {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* Tables */
+.table-wrapper,
+.admin-contacts-table-wrapper {
+  overflow-x: auto;
+}
+
+.user-table,
+.admin-contacts-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.user-table th,
+.admin-contacts-table th {
+  background: #2c3e50;
+  color: #fff;
+  padding: 12px;
+  text-align: left;
+}
+
+.user-table td,
+.admin-contacts-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  color: #333;
+}
+
+.user-table tr:hover,
+.admin-contacts-table tr:hover {
+  background: oklch(92.727% 0.01395 248.154);
+}
+
+Buttons
+.btn,
+.contact-delete-btn,
+.updateuser-btn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.btn-edit {
+  background: #3498db;
+  color: #fff;
+}
+
+.btn-edit:hover {
+  background: #2980b9;
+}
+
+.btn-delete,
+.contact-delete-btn {
+  background: #e74c3c;
+  color: #fff;
+}
+
+.btn-delete:hover,
+.contact-delete-btn:hover {
+  background: #c0392b;
+}
+
+/* Update User Card */
+.updateuser-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+.updateuser-title {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.updateuser-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.updateuser-label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  color: #34495e;
+}
+
+.updateuser-input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-top: 6px;
+  transition: border 0.2s;
+}
+
+.updateuser-input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.updateuser-btn {
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  background: #27ae60;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.updateuser-btn:hover {
+  background: #1e8449;
+}
+
+
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+  font-family: 'Poppins', sans-serif;
+}
+
+.register-form {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+  width: 380px;
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.register-form h2 {
+  margin-bottom: 20px;
+  color: #222;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.register-form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.register-form input:focus {
+  border-color: #007bff;
+  box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.3);
+  outline: none;
+}
+
+.register-form button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(45deg, #007bff, #00d4ff);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.register-form button:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(45deg, #0056b3, #0099cc);
+}
+.register-form textarea {
+  width: 100%;      /* form ke andar adjust ho jayega */
+  padding: 10px;    /* andar thoda space milega */
+  margin: 10px 0;   /* thoda gap input se */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;     /* resize option hata diya (chahe to remove kar sakte ho) */
+  box-sizing: border-box; /* overflow issue fix */
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
