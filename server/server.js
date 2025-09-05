@@ -24,13 +24,7 @@ app.use(express.json());
 app.use("/api/auth", authRouter);
 app.use("/api/contact", contactRouter); // ✔️ Correct path for contact
 app.use("/api/service", serviceRouter);
-app.use("/api/admin", adminRouter)
-app.get("/", (req, res)=>{
-  res.send({
-    activeStatus:true,
-    error: false
-  })
-})
+app.use("/api/admin", adminRouter);
 
 // ✅ Error Middleware
 app.use(errorMiddleware);
