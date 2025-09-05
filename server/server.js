@@ -27,7 +27,7 @@ app.use("/api/service", serviceRouter);
 app.use("/api/admin", adminRouter)
 app.get("/", (req, res)=>{
   res.send({
-    activeStatus:(true),
+    activeStatus:true,
     error: false
   })
 })
