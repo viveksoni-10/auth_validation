@@ -8,10 +8,11 @@ import { AdminContacts } from "./pages/AdminContacts";
 import { AdminUpdateUser } from "./pages/AdminUpdateUser";
 import { AdminUsers } from "./pages/AdminUsers";
 import Home from "./pages/home";
-import { PageNotFound } from "./pages/PageNotFound";
 import Service from "./pages/service";
 import { Contact } from "./pages/Contact";
-import Logout from "./pages/Logout.jsx";
+import Logout from "./pages/Logout";
+import { PageNotFound } from "./pages/PageNotFound";
+
 
 function App() {
   return (
